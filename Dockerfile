@@ -23,8 +23,8 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN \
   cd /tmp && \
   wget http://nodejs.org/dist/v8.11.1/node-v8.11.1.tar.gz && \
-  tar xvzf node-latest.tar.gz && \
-  rm -f node-latest.tar.gz && \
+  tar xvzf node-v8.11.1.tar.gz && \
+  rm -f node-v8.11.1.tar.gz && \
   cd node-v* && \
   ./configure && \
   CXX="g++ -Wno-unused-local-typedefs" make && \
